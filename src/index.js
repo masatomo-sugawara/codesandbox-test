@@ -88,10 +88,16 @@
 // const message2 = `名前は${name}です。年齢は${age}歳です。`;
 // console.log(message2);
 
-const myPlofile = [`まさとも`, 39];
-const message3 = `名前は${myPlofile[0]}です。年齢は${myPlofile[1]}歳です。`;
-//console.log(message3);
+// const myPlofile = [`まさとも`, 39];
+// const message3 = `名前は${myPlofile[0]}です。年齢は${myPlofile[1]}歳です。`;
+// //console.log(message3);
 
-const [name, age] = myPlofile;
-const message4 = `名前は${name}です。年齢は${age}歳です。`;
-console.log(message4);
+// const [name, age] = myPlofile;
+// const message4 = `名前は${name}です。年齢は${age}歳です。`;
+// console.log(message4);
+
+// デフォルト値
+const sayHello = (name = "ゲスト") => {
+  console.log(`こんにちは！${name}さん！`);
+};
+sayHello("マサトモ");
