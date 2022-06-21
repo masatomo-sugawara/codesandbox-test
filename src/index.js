@@ -54,7 +54,18 @@
 // console.log(message);
 
 // 従来の関数
-function func1(str) {
+// function func1(str) {
+//   return str;
+// }
+// console.log(func1("func1です。"));
+
+const func1 = function (str) {
   return str;
-}
+};
 console.log(func1("func1です。"));
+
+// アロー関数
+const func2 = (str) => {
+  return str;
+};
+console.log(func2("func2です。"));
