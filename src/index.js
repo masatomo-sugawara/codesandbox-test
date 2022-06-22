@@ -97,7 +97,36 @@
 // console.log(message4);
 
 // デフォルト値
-const sayHello = (name = "ゲスト") => {
-  console.log(`こんにちは！${name}さん！`);
-};
-sayHello("マサトモ");
+// const sayHello = (name = "ゲスト") => {
+//   console.log(`こんにちは！${name}さん！`);
+// };
+// sayHello("マサトモ");
+
+// スプレッド構文
+// 配列の展開
+// const arr1 = [1, 2];
+// // console.log(arr1);
+// // console.log(...arr1);
+
+// const sumFunc = (num1, num2) => {
+//   console.log(num1 + num2);
+// };
+// sumFunc(...arr1);
+// まとめる
+// const arr2 = [1, 2, 3, 4, 5];
+// const [num1, ...arr3] = arr2;
+// console.log(num1);
+// console.log(arr3);
+
+// 配列のコピーと結合
+const arr4 = [10, 20];
+const arr5 = [30, 40];
+const arr6 = [...arr4, ...arr5];
+arr6[0] = 100;
+console.log(arr6);
+console.log(arr4);
+
+// スプレッド構文を使わなくても直接代入すればコピーはできるが、オブジェクトの中身も引き継がれるので、片方を変更するとコピーしたオブジェクトも書き換わる。
+// const arr8 = arr4;
+// arr8[0] = 100;
+// console.log(arr4);
