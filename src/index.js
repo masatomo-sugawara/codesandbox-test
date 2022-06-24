@@ -119,14 +119,43 @@
 // console.log(arr3);
 
 // 配列のコピーと結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
-const arr6 = [...arr4, ...arr5];
-arr6[0] = 100;
-console.log(arr6);
-console.log(arr4);
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
+// const arr6 = [...arr4, ...arr5];
+// arr6[0] = 100;
+// console.log(arr6);
+// console.log(arr4);
 
 // スプレッド構文を使わなくても直接代入すればコピーはできるが、オブジェクトの中身も引き継がれるので、片方を変更するとコピーしたオブジェクトも書き換わる。
 // const arr8 = arr4;
 // arr8[0] = 100;
 // console.log(arr4);
+
+// mapやfilterを使った配列処理
+const nameArr = ["田中", "山田", "まさとも"];
+// // for (let index = 0; index < nameArr.length; index++) {
+// //   console.log(nameArr[index]);
+// // }
+
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+//console.log(nameArr2);
+
+// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
+
+const newNameArr = nameArr.map((name) => {
+  if (name === "まさとも") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
+
+newNameArr.map((name) => console.log(name));
+
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
