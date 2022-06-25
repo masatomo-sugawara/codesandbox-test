@@ -132,7 +132,7 @@
 // console.log(arr4);
 
 // mapやfilterを使った配列処理
-const nameArr = ["田中", "山田", "まさとも"];
+// const nameArr = ["田中", "山田", "まさとも"];
 // // for (let index = 0; index < nameArr.length; index++) {
 // //   console.log(nameArr[index]);
 // // }
@@ -144,18 +144,42 @@ const nameArr = ["田中", "山田", "まさとも"];
 
 // nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
 
-const newNameArr = nameArr.map((name) => {
-  if (name === "まさとも") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "まさとも") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
 
-newNameArr.map((name) => console.log(name));
+// newNameArr.map((name) => console.log(name));
 
 // const numArr = [1, 2, 3, 4, 5];
 // const newNumArr = numArr.filter((num) => {
 //   return num % 2 === 1;
 // });
 // console.log(newNumArr);
+
+/**
+ * 論理演算子の本当の意味を知ろう
+ */
+// const flag1 = true;
+// const flag2 = false;
+
+// if (flag1 || flag2) {
+//   console.log("1か2はtrueになります。");
+// }
+
+// if (flag1 && flag2) {
+//   console.log("1も2もtrueになります。");
+// }
+
+// ||は左側がfalseの場合は右側を返す
+const num = null;
+const fee = num || "金額未設定です";
+// console.log(fee);
+
+// &&は左がtrueの場合は右側を返す
+const num2 = 100;
+const fee2 = num2 && "何か設定されました";
+console.log(fee2);
